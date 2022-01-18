@@ -1,9 +1,8 @@
 import React from 'react';
+import Inicio from './components/Inicio';
 
 function App() {
-  return (
-    <h1>Hola mundo!</h1>
-  );
+  return <Inicio />;
 }
 
 export default App;

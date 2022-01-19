@@ -10,7 +10,7 @@ const Navbar = () => {
         justify-content: space-between;
         align-items: center;
         min-height: 6rem;
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.2);
     `;
 
     const Botones = styled.div`
@@ -19,6 +19,11 @@ const Navbar = () => {
         gap: 2rem;
         margin-right: 2rem;
         background-color: transparent;
+    `;
+
+    const Boton = styled.a`
+        text-decoration: none;
+        border: none;
     `;
 
     const Logo = styled.a`
@@ -56,10 +61,10 @@ const Navbar = () => {
             </Logo>
             <div className='d-flex align-items-center'>
                 <Botones>
-                    <a>boton</a>
-                    <a>boton</a>
-                    <a>boton</a>
-                    <a>boton</a>
+                    <Boton>Inicio</Boton>
+                    <Boton>Nosotros</Boton>
+                    <Boton>Catering</Boton>
+                    <Boton>Contacto</Boton>
                 </Botones>
                 <Redes>
                     <RedesFranco>

@@ -4,15 +4,31 @@ import styled from '@emotion/styled';
 import Navbar from './Navbar';
 const Inicio = () => {
   const Div = styled.div`
-    background-image: url('media/inicioFondo1.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('media/inicioFondo1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
   `;
+
+  const ContenedorHero = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  `;
+
   return (
     <Div>
       <Navbar />
+      <ContenedorHero>
+        <img
+          className="img-fluid text-center"
+          src="media/logoPanaderia.png"
+          alt="logo panaderia"
+        />
+      </ContenedorHero>
     </Div>
   );
 };

@@ -24,6 +24,9 @@ const Navbar = () => {
         gap: 2rem;
         margin-right: 2rem;
         background-color: transparent;
+        @media (max-width: 1024px) {
+            display: none;
+        }
     `;
 
     const Boton = styled.a`
@@ -49,45 +52,52 @@ const Navbar = () => {
         }
     `;
 
-    const Redes = styled.div`
-        display: flex;
-        justify-content: space-between;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: .5rem;
-        gap: .5rem;
-        align-items: center;
-        color: #000000;
+    const BurguerMenu = styled.button`
+       
     `;
+
+    // const Redes = styled.div`
+    //     display: flex;
+    //     justify-content: space-between;
+    //     background-color: rgba(0, 0, 0, 0.4);
+    //     padding: .5rem;
+    //     gap: .5rem;
+    //     align-items: center;
+    //     color: #000000;
+    // `;
+    // <div>
+    //     <Redes>
+    //         <h4>Franco Brumatti</h4>
+    //         <div className='d-flex flex-nowrap'>
+    //             <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
+    //             <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
+    //         </div>
+    //     </Redes>
+    //     <Redes>
+    //         <h4>Tomas Ghilino</h4>
+    //         <div className='d-flex flex-nowrap'>
+    //             <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
+    //             <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
+    //         </div>
+    //     </Redes>
+    // </div>
 
     return ( 
         <Nav>
             <Logo>
                 <img className='w-100 h-100' src='media/logo.png' alt="" />
             </Logo>
-            <div className='d-flex align-items-center'>
-                <Botones>
-                    <Boton>Inicio</Boton>
-                    <Boton>Nosotros</Boton>
-                    <Boton>Catering</Boton>
-                    <Boton>Contacto</Boton>
-                </Botones>
+            <Botones>
+                <Boton>Inicio</Boton>
+                <Boton>Nosotros</Boton>
+                <Boton>Catering</Boton>
+                <Boton>Contacto</Boton>
+            </Botones>
+            <BurguerMenu>
                 <div>
-                    <Redes>
-                        <h4>Franco Brumatti</h4>
-                        <div className='d-flex flex-nowrap'>
-                            <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
-                            <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
-                        </div>
-                    </Redes>
-                    <Redes>
-                        <h4>Tomas Ghilino</h4>
-                        <div className='d-flex flex-nowrap'>
-                            <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
-                            <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
-                        </div>
-                    </Redes>
+
                 </div>
-            </div>
+            </BurguerMenu>
         </Nav>
     );
 }

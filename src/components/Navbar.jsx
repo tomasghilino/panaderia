@@ -10,7 +10,12 @@ const Navbar = () => {
         justify-content: space-between;
         align-items: center;
         min-height: 6rem;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.4);
+
+        /* sombra */
+        box-shadow: -2px -3px 17px 1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -2px -3px 17px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px -3px 17px 1px rgba(0,0,0,0.75);
     `;
 
     const Botones = styled.div`
@@ -24,40 +29,40 @@ const Navbar = () => {
     const Boton = styled.a`
         text-decoration: none;
         border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #b1002c;
+        transition: all .3s;
+        &:hover{
+            color: #d80036;
+            cursor: pointer;
+        }
     `;
 
     const Logo = styled.a`
         text-decoration: none;
         margin-left: 5rem;
+        max-width: 8rem;
+        max-height: 8rem;
+        &:hover{
+            cursor: pointer;
+        }
     `;
 
     const Redes = styled.div`
         display: flex;
-        flex-direction: column;
-    `;
-
-    const RedesFranco = styled.div`
-        display: flex;
         justify-content: space-between;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.4);
         padding: .5rem;
         gap: .5rem;
         align-items: center;
-    `;
-
-    const RedesTomi = styled.div`
-        display: flex;
-        justify-content: space-between;
-        background-color: rgba(0, 0, 0, 0.15);
-        padding: .5rem;
-        gap: .5rem;
-        align-items: center;
+        color: #000000;
     `;
 
     return ( 
         <Nav>
             <Logo>
-                Logo
+                <img className='w-100 h-100' src='media/logo.png' alt="" />
             </Logo>
             <div className='d-flex align-items-center'>
                 <Botones>
@@ -66,22 +71,22 @@ const Navbar = () => {
                     <Boton>Catering</Boton>
                     <Boton>Contacto</Boton>
                 </Botones>
-                <Redes>
-                    <RedesFranco>
-                        <h3>Franco Brumatti</h3>
-                        <div className='justify-content-between'>
+                <div>
+                    <Redes>
+                        <h4>Franco Brumatti</h4>
+                        <div className='d-flex flex-nowrap'>
                             <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
                             <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
                         </div>
-                    </RedesFranco>
-                    <RedesTomi>
-                        <h3>Tomas Ghilino</h3>
-                        <div className='justify-content-between'>
+                    </Redes>
+                    <Redes>
+                        <h4>Tomas Ghilino</h4>
+                        <div className='d-flex flex-nowrap'>
                             <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
                             <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
                         </div>
-                    </RedesTomi>
-                </Redes>
+                    </Redes>
+                </div>
             </div>
         </Nav>
     );

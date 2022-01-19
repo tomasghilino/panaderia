@@ -9,7 +9,7 @@ const Inicio = () => {
   `;
   return (
     <Div>
-      <h1>hola</h1>
+      <Navbar />
     </Div>
   );
 };

@@ -3,15 +3,14 @@ import styled from '@emotion/styled';
 
 import Navbar from './Navbar';
 const Inicio = () => {
-  const ImagenFondo = styled.img`
-    width: 100%;
+  const Div = styled.div`
+    background-image: url('media/inicioFondo1.jpeg');
     height: 100vh;
   `;
   return (
-    <div>
-      <Navbar />
-      <ImagenFondo src="media/inicioFondo.jpeg" alt="panaderia fondo" />
-    </div>
+    <Div>
+      <h1>hola</h1>
+    </Div>
   );
 };
 

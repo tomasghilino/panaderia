@@ -36,10 +36,10 @@ const Navbar = () => {
         border: none;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #b1002c;
+        color: #ffffff;
         transition: all .3s;
         &:hover{
-            color: #d80036;
+            color: #e6e6e6;
             cursor: pointer;
         }
     `;
@@ -51,6 +51,7 @@ const Navbar = () => {
         max-height: 8rem;
         &:hover{
             cursor: pointer;
+            filter: brightness(120%);
         }
     `;
 
@@ -69,11 +70,28 @@ const Navbar = () => {
     `;
 
     const BurguerMenu = styled.div`
-        display: flex;
+        display: none;
         flex-direction: column;
+        top: 50px;
+        right: 10px;
+        padding: 1rem;
+        border-radius: .3rem;
+        position: absolute;
+        align-items: center;
+        background-color: #b9002e;
+
+        &:hover{
+            background-color: #c90032;
+        }
+
+        @media (max-width: 1024px) {
+            display: flex;
+        }
+    `;
+
+    const BurguerMenuDiv = styled.div`
         position: relative;
-        top: 20px;
-        z-index: 2;
+        display: flex;
     `;
 
     // const Redes = styled.div`
@@ -114,43 +132,43 @@ const Navbar = () => {
                     <Boton>Catering</Boton>
                     <Boton>Contacto</Boton>
                 </Botones>
-                <BurguerIcon
-                    onClick={() => setOpen(!open)}
-                    open={open}
-                >
-                    <div className='me-4'>
-                        <svg
-                            width="44"
-                            height="44"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
-                                fill="#b1002c"
-                            />
-                            <path
-                                d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
-                                fill="#b1002c"
-                            />
-                            <path
-                                d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
-                                fill="#b1002c"
-                            />
-                        </svg>
-                        {open ?
+                <BurguerMenuDiv>
+                    <BurguerIcon
+                        onClick={() => setOpen(!open)}
+                        open={open}
+                    >
+                        <div className='me-5'>
+                            <svg
+                                width="44"
+                                height="44"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                                    fill="#b1002c"
+                                />
+                                <path
+                                    d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                                    fill="#b1002c"
+                                />
+                                <path
+                                    d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                                    fill="#b1002c"
+                                />
+                            </svg>
+                        </div>
+                    </BurguerIcon>
+                    {open ? 
                         <BurguerMenu>
-                            
-                                <Boton>Inicio</Boton>
-                                <Boton>Nosotros</Boton>
-                                <Boton>Catering</Boton>
-                                <Boton>Contacto</Boton>
-                            
+                            <Boton>Inicio</Boton>
+                            <Boton>Nosotros</Boton>
+                            <Boton>Catering</Boton>
+                            <Boton>Contacto</Boton>
                         </BurguerMenu>
-                        : null}
-                    </div>
-                </BurguerIcon>
+                    : null}
+                </BurguerMenuDiv>
             </div>
         </Nav>
     );

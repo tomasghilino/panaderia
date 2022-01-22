@@ -46,9 +46,9 @@ const Navbar = () => {
 
     const Logo = styled.a`
         text-decoration: none;
-        margin-left: 5rem;
-        max-width: 8rem;
-        max-height: 8rem;
+        margin-left: 4rem;
+        width: 8rem;
+        height: 8rem;
         &:hover{
             cursor: pointer;
             filter: brightness(120%);
@@ -78,10 +78,10 @@ const Navbar = () => {
         border-radius: .3rem;
         position: absolute;
         align-items: center;
-        background-color: #b9002e;
+        background-color: #bb0000;
 
         &:hover{
-            background-color: #c90032;
+            background-color: #c40000;
         }
 
         @media (max-width: 1024px) {

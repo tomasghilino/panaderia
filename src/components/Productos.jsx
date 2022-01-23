@@ -8,19 +8,6 @@ const Productos = () => {
         height: 100%;
     `;
 
-    const Productos = styled.div`
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 22rem;
-        transition: all .3s;
-
-        &:hover{
-            -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-            transform: scale(1.05);
-        }
-    `;
-
     const ProductosTitulo = styled.div`
         display: flex;
         flex-direction: column;
@@ -43,6 +30,32 @@ const Productos = () => {
 
     const ProductosContenido = styled.div`
         display: block;
+
+        div {
+            height: 30rem;
+            overflow: hidden;
+
+            img:hover{
+                -webkit-transform: scale(1.1, 1.1);
+                -moz-transform: scale(1.1, 1.1);
+                -o-transform: scale(1.1, 1.1);
+                -ms-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+                transition: all .6s;
+            }
+        }
+
+        @media(min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 30rem;
+            grid-auto-flow: dense;
+            transition: all .3s;
+
+            div:nth-child(4n+3) {
+                grid-column: 2;
+            }
+        }
     `;
 
     const ProductosTexto = styled.div`
@@ -67,42 +80,34 @@ const Productos = () => {
                 <p>- Nuestras especialidades -</p>
             </ProductosTitulo>
             <ProductosContenido>
-                <Productos>
-                    <div>
-                        <img className='h-100 w-100' src="/media/productos1.jpg" alt="productos"/>
-                    </div>
-                    <ProductosTexto>
-                        <h1>Panaderia</h1>
-                        <p>Panes de todo tipo y tamaño</p>
-                    </ProductosTexto>
-                </Productos>
-                <Productos>
-                    <ProductosTexto>
-                        <h1>Delicias</h1>
-                        <p>Gran variedad de bocadillos dulces</p>
-                    </ProductosTexto>
-                    <div>
-                        <img className='h-100 w-100' src="/media/productos2.jpg" alt="productos"/>
-                    </div>
-                </Productos>
-                <Productos>
-                    <div>
-                        <img className='h-100 w-100' src="/media/productos3.jpg" alt="productos"/>
-                    </div>
-                    <ProductosTexto>
-                        <h1>Facturas</h1>
-                        <p>Rellenas de chocolate, dulce de leche o crema pastelera</p>
-                    </ProductosTexto>
-                </Productos>
-                <Productos>
-                    <ProductosTexto>
-                        <h1>Bocadillos salados</h1>
-                        <p>Pancitos, sacramentos, empanadas, chips y mas!</p>
-                    </ProductosTexto>
-                    <div>
-                        <img className='h-100 w-100' src="/media/productos4.jpg" alt="productos"/>
-                    </div>
-                </Productos>
+                <div>
+                    <img className='h-100 w-100' src="/media/productos1.jpg" alt="productos"/>
+                </div>
+                <ProductosTexto>
+                    <h1>Panaderia</h1>
+                    <p>Panes de todo tipo y tamaño</p>
+                </ProductosTexto>
+                <div>
+                    <img className='h-100 w-100' src="/media/productos2.jpg" alt="productos"/>
+                </div>
+                <ProductosTexto>
+                    <h1>Delicias</h1>
+                    <p>Gran variedad de bocadillos dulces</p>
+                </ProductosTexto>
+                <div>
+                    <img className='h-100 w-100' src="/media/productos3.jpg" alt="productos"/>
+                </div>
+                <ProductosTexto>
+                    <h1>Facturas</h1>
+                    <p>Rellenas de chocolate, dulce de leche o crema pastelera</p>
+                </ProductosTexto>
+                <div>
+                    <img className='h-100 w-100' src="/media/productos4.jpg" alt="productos"/>
+                </div>
+                <ProductosTexto>
+                    <h1>Bocadillos salados</h1>
+                    <p>Pancitos, sacramentos, empanadas, chips y mas!</p>
+                </ProductosTexto>
             </ProductosContenido>
         </ProductosLayout>
      );

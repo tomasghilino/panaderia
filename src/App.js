@@ -1,6 +1,7 @@
 import React from 'react';
 import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
+import NuestrasDelicias from './components/NuestrasDelicias';
 import Productos from './components/Productos';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Inicio />
       <Nosotros />
       <Productos />
+      <NuestrasDelicias />
     </>
   );
 }

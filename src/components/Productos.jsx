@@ -48,7 +48,7 @@ const Productos = () => {
         @media(min-width: 1024px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 30rem;
+            grid-template-rows: repeat(4, 30rem);
             grid-auto-flow: dense;
             transition: all .3s;
 

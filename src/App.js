@@ -3,6 +3,7 @@ import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
 import NuestrasDelicias from './components/NuestrasDelicias';
 import Productos from './components/Productos';
+import Menu from './components/Menu';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nosotros />
       <Productos />
       <NuestrasDelicias />
+      <Menu />
     </>
   );
 }

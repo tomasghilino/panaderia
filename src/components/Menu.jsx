@@ -28,7 +28,7 @@ const Menu = () => {
 
   return (
     <>
-      <ImagenTitulo background={`/media/inicioFondo1.jpeg`}>
+      <ImagenTitulo background={`/media/menucatering.jpg`}>
         <h1>Catering Artesanal</h1>
         <p>- Nuestro menu -</p>
       </ImagenTitulo>
@@ -45,7 +45,7 @@ const Menu = () => {
           reunión.
         </p>
       </TextoMenu>
-      <ImagenTitulo background={`/media/productos6.jpeg`}>
+      <ImagenTitulo background={`/media/menulunch.jpg`}>
         <h1>Catering Artesanal</h1>
         <p>- Nuestro menu -</p>
       </ImagenTitulo>
@@ -62,7 +62,7 @@ const Menu = () => {
           reunión.
         </p>
       </TextoMenu>
-      <ImagenTitulo background={`/media/inicioFondo1.jpeg`}>
+      <ImagenTitulo background={`/media/menupasteleriadulce.jpg`}>
         <h1>Catering Artesanal</h1>
         <p>- Nuestro menu -</p>
       </ImagenTitulo>

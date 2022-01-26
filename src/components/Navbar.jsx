@@ -6,7 +6,10 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     const Nav = styled.nav`
-        z-index: 1;
+        z-index: 25;
+        position: fixed;
+        top: 0;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;

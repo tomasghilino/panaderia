@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 const VideoInstitucional = () => {
   const Titulo = styled.h1`
     padding-top: 5rem;
@@ -24,7 +25,7 @@ const VideoInstitucional = () => {
     }
   `;
   return (
-    <div className="bg-light text-center ">
+    <div className="bg-secondary bg-gradient text-center ">
       <Titulo>Video Institucional</Titulo>
       <Video src="https://www.youtube.com/embed/EGbNI26PPYg" />
     </div>

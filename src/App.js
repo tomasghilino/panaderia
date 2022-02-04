@@ -5,6 +5,7 @@ import NuestrasDelicias from './components/NuestrasDelicias';
 import Productos from './components/Productos';
 import Menu from './components/Menu';
 import VideoInstitucional from './components/VideoInstitucional';
+import Maps from './components/Maps';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <NuestrasDelicias />
       <Menu />
       <VideoInstitucional />
+      <Maps />
     </>
   );
 }

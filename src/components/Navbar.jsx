@@ -1,23 +1,38 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from '@emotion/styled';
 
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
+    const [scrolled, setScolled] = useState(false);
+
+    const handleScroll = () => {
+        const position = window.scrollY;
+        if (position > 0) {
+            setScolled(true)
+        }
+        if (position === 0) {
+            setScolled(false)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+    
+    
+    
 
     const Nav = styled.nav`
-        z-index: 1;
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 6rem;
-        background-color: rgba(0, 0, 0, 0.4);
-        border-bottom: 2px solid #00000078;
-
-        /* sombra */
-        box-shadow: -2px -3px 17px 1px rgba(0,0,0,0.75);
-        -webkit-box-shadow: -2px -3px 17px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: -2px -3px 17px 1px rgba(0,0,0,0.75);
+        transform: ${(props) => (props.scrolled ? "scale(1.01)" : "scale(1)")};
+        transition: all 1s;
     `;
 
     const Botones = styled.div`
@@ -34,6 +49,7 @@ const Navbar = () => {
     const Boton = styled.a`
         text-decoration: none;
         border: none;
+        font-family: 'Roboto Slab', sans-serif;
         font-size: 1.5rem;
         font-weight: bold;
         color: #ffffff;
@@ -121,7 +137,9 @@ const Navbar = () => {
     // </div>
 
     return ( 
-        <Nav>
+        <Nav
+            scrolled={scrolled}
+        >
             <Logo>
                 <img className='w-100 h-100' src='media/logo.png' alt="" />
             </Logo>

@@ -31,7 +31,7 @@ const Navbar = () => {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        transform: ${(props) => (props.scrolled ? "scale(1.01)" : "scale(1)")};
+        background-color: ${({ scrolled }) => (scrolled ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0)")};
         transition: all 1s;
     `;
 

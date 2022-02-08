@@ -66,6 +66,13 @@ const Menu = () => {
     padding: 2rem;
   `;
 
+  const TituloSandwich = styled.div`
+    padding: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+  `;
+
   return (
     <>
       <ImagenTitulo background={`/media/menucatering.jpg`}>
@@ -156,7 +163,7 @@ const Menu = () => {
         <FontAwesomeIcon className='fa-5x mb-3' icon={faHamburger} />
         <TextoMenuLista>
           <div>
-            <p>COMUNES</p>
+            <TituloSandwich>COMUNES</TituloSandwich>
             <ul>
               <li>Jamon y queso</li>
               <li>Jamon y tomate</li>
@@ -170,7 +177,7 @@ const Menu = () => {
             </ul>
           </div>
           <div>
-            <p>ESPECIALES</p>
+            <TituloSandwich>ESPECIALES</TituloSandwich>
             <ul>
               <li>Jamon y anana</li>
               <li>Jamon y palmito</li>
@@ -181,7 +188,7 @@ const Menu = () => {
             </ul>
           </div>
           <div>
-            <p>SUPERESPECIALES</p>
+            <TituloSandwich>SUPERESPECIALES</TituloSandwich>
             <ul>
               <li>Crudo y queso</li>
               <li>Crudo y tomate</li>
@@ -193,7 +200,7 @@ const Menu = () => {
             </ul>
           </div>
         </TextoMenuLista>
-        <p>SIMPLES</p>
+        <TituloSandwich>SIMPLES</TituloSandwich>
         <TextoMenuLista>
           <div className='d-flex'>
             <ul>

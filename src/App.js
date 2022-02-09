@@ -5,6 +5,7 @@ import NuestrasDelicias from './components/NuestrasDelicias';
 import Productos from './components/Productos';
 import Menu from './components/Menu';
 import VideoInstitucional from './components/VideoInstitucional';
+import Formulario from './components/Formulario';
 import Maps from './components/Maps';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ function App() {
       <NuestrasDelicias />
       <Menu />
       <VideoInstitucional />
+      <Formulario />
       <Maps />
       <Footer />
     </>

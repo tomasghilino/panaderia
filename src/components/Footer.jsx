@@ -21,7 +21,6 @@ const Footer = () => {
     gap: 1rem;
     & {
       font-size: 40px;
-      color: white;
     }
   `;
 
@@ -30,6 +29,10 @@ const Footer = () => {
 
     p {
       color: #cacaca;
+    }
+
+    a {
+      color: white;
     }
   `;
 
@@ -49,11 +52,18 @@ const Footer = () => {
       width: 150px;
       height: 150px;
     }
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
   `;
 
   const IconosContainer = styled.div`
-    color: white;
     margin-top: 3rem;
+    & {
+      color: white;
+    }
   `;
   return (
     <Footer>
@@ -68,9 +78,15 @@ const Footer = () => {
             lo que hacemos.
           </p>
           <IconoDiv>
-            <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faYoutube} />
-            <FontAwesomeIcon icon={faFacebook} />
+            <a href="">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="">
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+            <a href="">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
           </IconoDiv>
         </div>
 
@@ -87,11 +103,11 @@ const Footer = () => {
             <FontAwesomeIcon icon={faMailBulk} />
             <p className="d-inline-block textoIcono">correo@correo.com</p>
           </div>
-          <div>
+          <div className="d-flex">
             <FontAwesomeIcon icon={faNetworkWired} />
             <p className="d-inline-block textoIcono">www.dibepanaderia.com</p>
           </div>
-          <div>
+          <div className="d-flex">
             <FontAwesomeIcon icon={faClock} />
             <p className="d-inline-block textoIcono">
               Martes a Domingo: 7AM - 13PM y 16PM - 20:30PM
@@ -99,6 +115,14 @@ const Footer = () => {
           </div>
         </IconosContainer>
       </FooterContainer>
+      <div className="bg-dark p-4 text-center">
+        <div className="container">
+          <p className="fs-5">
+            Panaderia Dibe | Sitio web hecho a modo de estudio académico. &copy;
+            2022
+          </p>
+        </div>
+      </div>
     </Footer>
   );
 };

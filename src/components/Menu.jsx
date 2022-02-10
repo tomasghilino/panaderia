@@ -30,7 +30,7 @@ const Menu = () => {
 
   const TextoMenuLista = styled.div`
     display: block;
-    text-align: center;
+    text-align: start;
     padding: 1rem;
     border-top: 3px solid red;
     
@@ -53,7 +53,6 @@ const Menu = () => {
     @media(min-width: 1024px) {
       display: flex;
       justify-content: center;
-      text-align: start;
       gap: 3rem;
     }
   `;

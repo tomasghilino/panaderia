@@ -49,11 +49,12 @@ const Formulario = () => {
 
         button {
             margin: 2rem auto;
-            width: 20%;
+            width: 35%;
             height: 3rem;
             color: #FFF;
             background-color: #d60303;
-            border: none;
+            border: 1px solid #c50000;
+            border-radius: 0.1rem;
         }
     `;
 

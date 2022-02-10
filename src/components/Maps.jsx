@@ -40,7 +40,7 @@ const Maps = () => {
     padding: 2rem;
   `;
   return (
-    <div>
+    <div id='ubicacion'>
       <Seccion>
         <MapContainer
           center={[-34.6037389, -58.3815704]}

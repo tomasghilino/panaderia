@@ -20,11 +20,13 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
     }, []);
     
-    
+    const handleClickScroll = ({yCord}) => {
+        window.scrollTo(0, yCord)
+    }
     
 
     const Nav = styled.nav`
-        z-index: 99;
+        z-index: 9999;
         position: fixed;
         top: 0;
         width: 100%;
@@ -110,45 +112,35 @@ const Navbar = () => {
         display: flex;
     `;
 
-    // const Redes = styled.div`
-    //     display: flex;
-    //     justify-content: space-between;
-    //     background-color: rgba(0, 0, 0, 0.4);
-    //     padding: .5rem;
-    //     gap: .5rem;
-    //     align-items: center;
-    //     color: #000000;
-    // `;
-    // <div>
-    //     <Redes>
-    //         <h4>Franco Brumatti</h4>
-    //         <div className='d-flex flex-nowrap'>
-    //             <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
-    //             <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
-    //         </div>
-    //     </Redes>
-    //     <Redes>
-    //         <h4>Tomas Ghilino</h4>
-    //         <div className='d-flex flex-nowrap'>
-    //             <SocialIcon className='mx-2' url="https://github.com/FrancoBrumatti" network="github" />
-    //             <SocialIcon url="https://www.linkedin.com/in/franco-brumatti/" network="linkedin" />
-    //         </div>
-    //     </Redes>
-    // </div>
-
     return ( 
         <Nav
             scrolled={scrolled}
         >
-            <Logo>
+            <Logo
+                onClick={() => handleClickScroll(0)}
+            >
                 <img className='w-100 h-100' src='media/logo.png' alt="" />
             </Logo>
             <div className='d-flex'>
                 <Botones>
-                    <Boton>Inicio</Boton>
-                    <Boton>Nosotros</Boton>
-                    <Boton>Catering</Boton>
-                    <Boton>Contacto</Boton>
+                    <Boton
+                        onClick={() => handleClickScroll(0)}
+                    >Inicio</Boton>
+                    <Boton
+                        href='#nosotros'
+                    >Nosotros</Boton>
+                    <Boton
+                        href='#productos'
+                    >Productos</Boton>
+                    <Boton
+                        href='#catering'
+                    >Catering</Boton>
+                    <Boton
+                        href='#contacto'
+                    >Contacto</Boton>
+                    <Boton
+                        href='#ubicacion'
+                    >Ubicación</Boton>
                 </Botones>
                 <BurguerMenuDiv>
                     <BurguerIcon
@@ -180,7 +172,9 @@ const Navbar = () => {
                     </BurguerIcon>
                     {open ? 
                         <BurguerMenu>
-                            <Boton>Inicio</Boton>
+                            <Boton
+                                onClick={() => handleClickScroll(0)}
+                            >Inicio</Boton>
                             <Boton>Nosotros</Boton>
                             <Boton>Catering</Boton>
                             <Boton>Contacto</Boton>

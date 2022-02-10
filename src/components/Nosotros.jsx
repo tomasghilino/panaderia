@@ -38,7 +38,7 @@ const Nosotros = () => {
     }
   `;
   return (
-    <ContenedorNosotros className="row gx-0">
+    <ContenedorNosotros id='nosotros' className="row gx-0">
       <TextoNosotros className="col-md-6 ">
         <h1>Nosotros</h1>
         <TextoCursiva>- Nuestros Secretos -</TextoCursiva>

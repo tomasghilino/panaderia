@@ -3,7 +3,7 @@ import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
 import NuestrasDelicias from './components/NuestrasDelicias';
 import Productos from './components/Productos';
-import Menu from './components/Menu';
+import Catering from './components/Catering';
 import VideoInstitucional from './components/VideoInstitucional';
 import Formulario from './components/Formulario';
 import Maps from './components/Maps';
@@ -16,7 +16,7 @@ function App() {
       <Nosotros />
       <Productos />
       <NuestrasDelicias />
-      <Menu />
+      <Catering />
       <VideoInstitucional />
       <Formulario />
       <Maps />

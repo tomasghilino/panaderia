@@ -3,7 +3,8 @@ import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBirthdayCake, faBreadSlice, faHamburger } from '@fortawesome/free-solid-svg-icons';
  
-const Menu = () => {
+const Catering = () => {
+
   const ImagenTitulo = styled.div`
     display: flex;
     flex-direction: column;
@@ -74,7 +75,7 @@ const Menu = () => {
 
   return (
     <>
-      <ImagenTitulo background={`/media/menucatering.jpg`}>
+      <ImagenTitulo id='catering' background={`/media/menucatering.jpg`}>
         <h1>Catering Artesanal</h1>
         <p>- Nuestro menu -</p>
       </ImagenTitulo>
@@ -221,4 +222,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Catering;

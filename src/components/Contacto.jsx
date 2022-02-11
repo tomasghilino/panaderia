@@ -6,10 +6,11 @@ const Contacto = () => {
     const ContactoLayout = styled.div`
         display: block;
         text-align: center;
+        margin-top: 2rem;
     `;
 
     const ContactoImagen = styled.div`
-        background-image: url('/media/Contactopanaderia.jpg');
+        background-image: url('/media/contactopanaderia.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

@@ -20,13 +20,17 @@ const Inicio = () => {
     align-items: center;
   `;
 
+  const Img = styled.img`
+    margin-top: 10rem;
+  `;
+
   return (
     <Div
       id='inicio'
     >
       <Navbar />
       <ContenedorHero>
-        <img
+        <Img
           className="img-fluid text-center"
           src="media/logoPanaderia.png"
           alt="logo panaderia"

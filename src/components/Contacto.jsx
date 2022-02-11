@@ -41,11 +41,18 @@ const Contacto = () => {
 
         input {
             margin: 0 2rem;
+            padding: .3rem .3rem;
+            -webkit-appearance: none;
+            border: 2px solid #000;
+            border-radius: 0.1rem;
         }
 
         textarea {
             resize: none;
             margin: 0 2rem;
+            padding: .3rem .3rem;
+            border: 2px solid #000;
+            border-radius: 0.1rem;
         }
 
         button {

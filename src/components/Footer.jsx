@@ -21,6 +21,11 @@ const Footer = () => {
     gap: 1rem;
     & {
       font-size: 40px;
+      cursor: pointer;
+    }
+
+    a {
+      pointer-events: none;
     }
   `;
 
@@ -78,13 +83,13 @@ const Footer = () => {
             lo que hacemos.
           </p>
           <IconoDiv>
-            <a href="">
+            <a href="/">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="">
+            <a href="/">
               <FontAwesomeIcon icon={faYoutube} />
             </a>
-            <a href="">
+            <a href="/">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </IconoDiv>

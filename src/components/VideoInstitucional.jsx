@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
 const VideoInstitucional = () => {
   const Titulo = styled.h1`
     padding-top: 5rem;
@@ -14,12 +13,12 @@ const VideoInstitucional = () => {
     width: 1280px;
     height: 720px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1291px) {
       width: 600px;
       height: 400px;
     }
 
-    @media (max-width: 568px) {
+    @media (max-width: 609px) {
       width: 300px;
       height: 220px;
     }

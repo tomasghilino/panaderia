@@ -47,7 +47,7 @@ const Navbar = () => {
     const Boton = styled.a`
         text-decoration: none;
         border: none;
-        font-family: 'Roboto Slab', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
         font-weight: bold;
         color: #ffffff;
@@ -93,11 +93,7 @@ const Navbar = () => {
         border-radius: .3rem;
         position: absolute;
         align-items: center;
-        background-color: #bb0000;
-
-        &:hover{
-            background-color: #c40000;
-        }
+        background-color: #d60303;
 
         @media (max-width: 1024px) {
             display: flex;

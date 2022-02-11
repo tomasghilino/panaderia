@@ -13,12 +13,12 @@ const VideoInstitucional = () => {
     width: 1280px;
     height: 720px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1291px) {
       width: 600px;
       height: 400px;
     }
 
-    @media (max-width: 568px) {
+    @media (max-width: 609px) {
       width: 300px;
       height: 220px;
     }

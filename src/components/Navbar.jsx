@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styled from '@emotion/styled';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
@@ -18,12 +19,7 @@ const Navbar = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-    }, []);
-    
-    const handleClickScroll = ({yCord}) => {
-        window.scrollTo(0, yCord)
-    }
-    
+    }, []);    
 
     const Nav = styled.nav`
         z-index: 9999;
@@ -75,6 +71,7 @@ const Navbar = () => {
 
     const BurguerIcon = styled.button`
        border: none;
+       margin-right: 0.5rem;
        background-color: transparent;
        transition: all 0.3s;
 
@@ -116,31 +113,45 @@ const Navbar = () => {
         <Nav
             scrolled={scrolled}
         >
-            <Logo
-                onClick={() => handleClickScroll(0)}
-            >
-                <img className='w-100 h-100' src='media/logo.png' alt="" />
+            <Logo>
+                <Link
+                    to='inicio'
+                >
+                 <img className='w-100 h-100' src='media/logo.png' alt="" />
+                </Link> 
             </Logo>
             <div className='d-flex'>
                 <Botones>
-                    <Boton
-                        onClick={() => handleClickScroll(0)}
-                    >Inicio</Boton>
-                    <Boton
-                        href='#nosotros'
-                    >Nosotros</Boton>
-                    <Boton
-                        href='#productos'
-                    >Productos</Boton>
-                    <Boton
-                        href='#catering'
-                    >Catering</Boton>
-                    <Boton
-                        href='#contacto'
-                    >Contacto</Boton>
-                    <Boton
-                        href='#ubicacion'
-                    >Ubicación</Boton>
+                    <Boton>
+                        <Link
+                            to='inicio'
+                        >Inicio</Link>
+                    </Boton>
+                    <Boton>
+                        <Link
+                            to='nosotros'
+                        >Nosotros</Link>
+                    </Boton>
+                    <Boton>
+                        <Link
+                            to='productos'
+                        >Productos</Link>
+                    </Boton>
+                    <Boton>
+                        <Link
+                            to='catering'
+                        >Catering</Link>
+                    </Boton>
+                    <Boton>
+                        <Link
+                            to='contacto'
+                        >Contacto</Link>
+                    </Boton>
+                    <Boton>
+                        <Link
+                            to='ubicacion'
+                        >Ubicacion</Link>
+                    </Boton>
                 </Botones>
                 <BurguerMenuDiv>
                     <BurguerIcon
@@ -172,12 +183,36 @@ const Navbar = () => {
                     </BurguerIcon>
                     {open ? 
                         <BurguerMenu>
-                            <Boton
-                                onClick={() => handleClickScroll(0)}
-                            >Inicio</Boton>
-                            <Boton>Nosotros</Boton>
-                            <Boton>Catering</Boton>
-                            <Boton>Contacto</Boton>
+                            <Boton>
+                                <Link
+                                    to='inicio'
+                                >Inicio</Link>
+                            </Boton>
+                            <Boton>
+                                <Link
+                                    to='nosotros'
+                                >Nosotros</Link>
+                            </Boton>
+                            <Boton>
+                                <Link
+                                    to='productos'
+                                >Productos</Link>
+                            </Boton>
+                            <Boton>
+                                <Link
+                                    to='catering'
+                                >Catering</Link>
+                            </Boton>
+                            <Boton>
+                                <Link
+                                    to='contacto'
+                                >Contacto</Link>
+                            </Boton>
+                            <Boton>
+                                <Link
+                                    to='ubicacion'
+                                >Ubicacion</Link>
+                            </Boton>
                         </BurguerMenu>
                     : null}
                 </BurguerMenuDiv>

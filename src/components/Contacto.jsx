@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const Formulario = () => {
+const Contacto = () => {
 
-    const FormularioLayout = styled.div`
+    const ContactoLayout = styled.div`
         display: block;
         text-align: center;
     `;
 
-    const FormularioImagen = styled.div`
-        background-image: url('/media/formulariopanaderia.jpg');
+    const ContactoImagen = styled.div`
+        background-image: url('/media/Contactopanaderia.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -20,7 +20,7 @@ const Formulario = () => {
         }
     `;
 
-    const Formulario = styled.form`
+    const Contacto = styled.form`
         font-family: 'Roboto Slab', sans-serif;
         line-height: 1.8;
         width: 50%; 
@@ -33,7 +33,7 @@ const Formulario = () => {
 
     `;
 
-    const FormularioInputs = styled.div`
+    const ContactoInputs = styled.div`
         display: flex;
         flex-direction: column;
         padding: 3rem 0;
@@ -59,11 +59,13 @@ const Formulario = () => {
     `;
 
     return ( 
-        <FormularioLayout>
-            <Formulario>
+        <ContactoLayout
+            id='contacto'
+        >
+            <Contacto>
                 <h1>Contacto</h1>
                 <p>- dejanos tus consultas o sugerencias -</p>
-                <FormularioInputs>
+                <ContactoInputs>
                     <label htmlFor="nombre">Nombre</label>
                     <input type="text" id="nombre" name='nombre' />
                     <label htmlFor="email">E-Mail</label>
@@ -73,13 +75,13 @@ const Formulario = () => {
                     <label htmlFor="mensaje">Mensaje</label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
                     <button>Enviar</button>
-                </FormularioInputs>
-            </Formulario>
-            <FormularioImagen>
+                </ContactoInputs>
+            </Contacto>
+            <ContactoImagen>
                 
-            </FormularioImagen>
-        </FormularioLayout> 
+            </ContactoImagen>
+        </ContactoLayout> 
     );
 }
  
-export default Formulario;
+export default Contacto;

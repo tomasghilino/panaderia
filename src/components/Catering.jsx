@@ -48,7 +48,7 @@ const Catering = () => {
       margin: 0 0.3rem 0 -0.25rem;
       position: relative;
       top: 0.08rem;
-      color: red;
+      color: #d60303;
     }
 
     @media(min-width: 1024px) {
@@ -56,6 +56,10 @@ const Catering = () => {
       justify-content: center;
       gap: 3rem;
     }
+  `;
+
+  const IconosCatering = styled.div`
+    color: #d60303;
   `;
 
   const ContenidoMenu = styled.div`
@@ -96,7 +100,9 @@ const Catering = () => {
         <h1>Lunch</h1>
       </ImagenTitulo>
       <ContenidoMenu>
-        <FontAwesomeIcon className='fa-5x mb-3' icon={faBreadSlice} />
+        <IconosCatering>
+          <FontAwesomeIcon className='fa-5x mb-3' icon={faBreadSlice} />
+        </IconosCatering>
         <TextoMenuLista>
           <div>
             <ul >
@@ -130,7 +136,9 @@ const Catering = () => {
         <h1>Pasteleria Dulce</h1>
       </ImagenTitulo>
       <ContenidoMenu>
-        <FontAwesomeIcon className='fa-5x mb-3' icon={faBirthdayCake} />
+        <IconosCatering>
+         <FontAwesomeIcon className='fa-5x mb-3' icon={faBirthdayCake} />
+        </IconosCatering>
         <TextoMenuLista>
           <div>
             <ul>
@@ -160,7 +168,9 @@ const Catering = () => {
         <h1>Sandwich</h1>
       </ImagenTitulo>
       <ContenidoMenu>
-        <FontAwesomeIcon className='fa-5x mb-3' icon={faHamburger} />
+        <IconosCatering>
+         <FontAwesomeIcon className='fa-5x mb-3' icon={faHamburger} />
+        </IconosCatering>
         <TextoMenuLista>
           <div>
             <TituloSandwich>COMUNES</TituloSandwich>

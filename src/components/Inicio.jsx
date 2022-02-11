@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import Navbar from './Navbar';
+
 const Inicio = () => {
   const Div = styled.div`
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -20,7 +21,9 @@ const Inicio = () => {
   `;
 
   return (
-    <Div>
+    <Div
+      id='inicio'
+    >
       <Navbar />
       <ContenedorHero>
         <img

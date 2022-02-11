@@ -74,7 +74,9 @@ const Productos = () => {
     `;
 
     return ( 
-        <ProductosLayout>
+        <ProductosLayout
+        id='productos'
+        >
             <ProductosTitulo>
                 <h1>Productos</h1>
                 <p>- Nuestras especialidades -</p>

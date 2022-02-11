@@ -2,6 +2,18 @@ import React, {useState, useEffect} from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'react-scroll';
 
+const Nav = styled.nav`
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ${({ scrolled }) => (scrolled ? "rgba(0, 0, 0, 0.6)" : "rgba(0, 0, 0, 0)")};
+    transition: all .4s ease-in-out;
+`;
+
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
@@ -20,18 +32,6 @@ const Navbar = () => {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
     }, []);    
-
-    const Nav = styled.nav`
-        z-index: 9999;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: ${({ scrolled }) => (scrolled ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0)")};
-        transition: all 1s;
-    `;
 
     const Botones = styled.div`
         display: flex;

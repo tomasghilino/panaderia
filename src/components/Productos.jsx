@@ -41,7 +41,7 @@ const Productos = () => {
                 -o-transform: scale(1.1, 1.1);
                 -ms-transform: scale(1.1, 1.1);
                 transform: scale(1.1, 1.1);
-                transition: all .8s;
+                transition: all .4s;
             }
         }
 

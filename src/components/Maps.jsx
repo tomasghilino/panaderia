@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrain, faSubway, faBus } from '@fortawesome/free-solid-svg-icons';
-import './Maps.css';
 
 const Maps = () => {
   const Seccion = styled.div`
@@ -40,7 +39,7 @@ const Maps = () => {
     padding: 2rem;
   `;
   return (
-    <div id='ubicacion'>
+    <div id="ubicacion">
       <Seccion>
         <MapContainer
           center={[-34.6037389, -58.3815704]}

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
 const VideoInstitucional = () => {
   const Titulo = styled.h1`
     padding-top: 5rem;

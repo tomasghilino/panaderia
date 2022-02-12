@@ -13,7 +13,6 @@ import {
   faNetworkWired,
   faClock,
 } from '@fortawesome/free-solid-svg-icons';
-import './Maps.css';
 
 const Footer = () => {
   const IconoDiv = styled.div`
@@ -48,7 +47,7 @@ const Footer = () => {
 
     padding: 5rem;
     gap: 60px;
-    margin: ;
+    margin: auto;
 
     align-items: center;
     justify-content: space-evenly;

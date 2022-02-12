@@ -11,6 +11,9 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     background-color: ${({ scrolled }) => (scrolled ? "rgba(0, 0, 0, 0.6)" : "rgba(0, 0, 0, 0)")};
+    box-shadow: ${({ scrolled }) => (scrolled ? "0px 0px 20px 0px rgba(0,0,0,0.75)" : "none")};
+    -webkit-box-shadow: ${({ scrolled }) => (scrolled ? "0px 0px 20px 0px rgba(0,0,0,0.75)" : "none")};
+    -moz-box-shadow: ${({ scrolled }) => (scrolled ? "0px 0px 20px 0px rgba(0,0,0,0.75)" : "none")};
     transition: all .4s ease-in-out;
 `;
 
@@ -50,11 +53,15 @@ const Navbar = () => {
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #ffffff;
+        color: #d60303;
         transition: all .3s;
         &:hover{
-            color: #e6e6e6;
+            color: #ffffff;
             cursor: pointer;
+        }
+
+        @media (max-width: 1024px) {
+            color: #d1d1d1;
         }
     `;
 

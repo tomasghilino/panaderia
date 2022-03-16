@@ -5,37 +5,46 @@ import Navbar from './Navbar';
 
 const Inicio = () => {
   const Div = styled.div`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('media/inicioFondo1.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
     height: 100vh;
-    width: 100%;
-  `;
-
-  const ContenedorHero = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
   `;
 
   const Img = styled.img`
-    margin-top: 10rem;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+
+    @media (min-width: 768px) {
+      height: 600px;
+      width: 600px;
+    }
+  `;
+
+  const Video = styled.video`
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    transform: translateX(calc((100% - 100vw) / 2));
+    filter: brightness(75%);
   `;
 
   return (
-    <Div
-      id='inicio'
-    >
+    <Div id="inicio">
       <Navbar />
-      <ContenedorHero>
-        <Img
-          className="img-fluid text-center"
-          src="media/logoPanaderia.png"
-          alt="logo panaderia"
-        />
-      </ContenedorHero>
+
+      <Img src="media/logoPanaderia.png" alt="logo panaderia"></Img>
+
+      <Video muted loop autoPlay>
+        <source src="media/panaderiaVideo.mp4" type="video/mp4"></source>
+      </Video>
     </Div>
   );
 };

@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBirthdayCake, faBreadSlice, faHamburger } from '@fortawesome/free-solid-svg-icons';
- 
-const Catering = () => {
+import {
+  faBirthdayCake,
+  faBreadSlice,
+  faHamburger,
+} from '@fortawesome/free-solid-svg-icons';
 
+const Catering = () => {
   const ImagenTitulo = styled.div`
     display: flex;
     flex-direction: column;
@@ -32,9 +35,9 @@ const Catering = () => {
   const TextoMenuLista = styled.div`
     display: block;
     text-align: start;
-    padding: 1rem;
+
     border-top: 3px solid red;
-    
+
     ul {
       color: #252525;
       font-weight: bold;
@@ -42,7 +45,7 @@ const Catering = () => {
     }
 
     li::before {
-      content: "•";
+      content: '•';
       font-size: 130%;
       line-height: 0;
       margin: 0 0.3rem 0 -0.25rem;
@@ -51,7 +54,7 @@ const Catering = () => {
       color: #d60303;
     }
 
-    @media(min-width: 1024px) {
+    @media (min-width: 1024px) {
       display: flex;
       justify-content: center;
       gap: 3rem;
@@ -79,7 +82,7 @@ const Catering = () => {
 
   return (
     <>
-      <ImagenTitulo id='catering' background={`/media/menucatering.jpg`}>
+      <ImagenTitulo id="catering" background={`/media/menucatering.jpg`}>
         <h1>Catering Artesanal</h1>
         <p>- Nuestro menu -</p>
       </ImagenTitulo>
@@ -101,11 +104,11 @@ const Catering = () => {
       </ImagenTitulo>
       <ContenidoMenu>
         <IconosCatering>
-          <FontAwesomeIcon className='fa-5x mb-3' icon={faBreadSlice} />
+          <FontAwesomeIcon className="fa-5x mb-3" icon={faBreadSlice} />
         </IconosCatering>
         <TextoMenuLista>
           <div>
-            <ul >
+            <ul>
               <li>Chips</li>
               <li>Fosforito</li>
               <li>Saladitos</li>
@@ -137,7 +140,7 @@ const Catering = () => {
       </ImagenTitulo>
       <ContenidoMenu>
         <IconosCatering>
-         <FontAwesomeIcon className='fa-5x mb-3' icon={faBirthdayCake} />
+          <FontAwesomeIcon className="fa-5x mb-3" icon={faBirthdayCake} />
         </IconosCatering>
         <TextoMenuLista>
           <div>
@@ -169,7 +172,7 @@ const Catering = () => {
       </ImagenTitulo>
       <ContenidoMenu>
         <IconosCatering>
-         <FontAwesomeIcon className='fa-5x mb-3' icon={faHamburger} />
+          <FontAwesomeIcon className="fa-5x mb-3" icon={faHamburger} />
         </IconosCatering>
         <TextoMenuLista>
           <div>
@@ -212,17 +215,15 @@ const Catering = () => {
         </TextoMenuLista>
         <TituloSandwich>SIMPLES</TituloSandwich>
         <TextoMenuLista>
-          <div className='d-flex'>
+          <div className="d-flex">
             <ul>
               <li>Jamon cocido</li>
               <li>Jamon crudo</li>
+              <li>Cantimpalo</li>
             </ul>
             <ul>
               <li>Mortadela bocatti</li>
               <li>Longaniza</li>
-            </ul>
-            <ul>
-              <li>Cantimpalo</li>
               <li>Queso</li>
             </ul>
           </div>

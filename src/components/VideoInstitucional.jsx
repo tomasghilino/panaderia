@@ -22,6 +22,11 @@ const VideoInstitucional = () => {
       width: 300px;
       height: 220px;
     }
+
+    @media (max-width: 390px) {
+      width: 250px;
+      height: 170px;
+    }
   `;
   return (
     <div className="bg-secondary bg-gradient text-center ">

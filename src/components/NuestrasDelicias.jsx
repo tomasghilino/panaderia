@@ -15,6 +15,19 @@ import SwiperCore, { Pagination } from 'swiper';
 SwiperCore.use([Pagination]);
 
 const NuestrasDelicias = () => {
+  const NuestrasDeliciasContainer = styled.div`
+    text-align: center;
+    margin-top: 5rem;
+    padding: 4rem;
+
+    @media (max-width: 768px) {
+      padding: 0.5rem;
+      h1,
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  `;
   const Titulo = styled.h1`
     font-family: 'Roboto Slab', sans-serif;
     font-size: 3.5rem;
@@ -29,9 +42,10 @@ const NuestrasDelicias = () => {
   const ImgSlider = styled.img`
     padding: 2rem;
   `;
+
   return (
     <section className="bg-light">
-      <div className="text-center mt-5 p-4">
+      <NuestrasDeliciasContainer>
         <Titulo>Nuestras Delicias</Titulo>
         <Subtitulo>- Frescura y sabor -</Subtitulo>
         <Swiper
@@ -62,7 +76,7 @@ const NuestrasDelicias = () => {
             <ImgSlider src="/media/productos6.jpeg" alt="productos 6" />
           </SwiperSlide>
         </Swiper>
-      </div>
+      </NuestrasDeliciasContainer>
     </section>
   );
 };

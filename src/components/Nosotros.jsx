@@ -10,7 +10,7 @@ const Nosotros = () => {
     font-family: 'Roboto Slab', sans-serif;
     line-height: 1.8;
 
-    padding: 6rem;
+    padding: 2rem;
     color: #3f3f3f;
     font-size: 1.3rem;
 
@@ -38,7 +38,7 @@ const Nosotros = () => {
     }
   `;
   return (
-    <ContenedorNosotros id='nosotros' className="row gx-0">
+    <ContenedorNosotros id="nosotros" className="row gx-0">
       <TextoNosotros className="col-md-6 ">
         <h1>Nosotros</h1>
         <TextoCursiva>- Nuestros Secretos -</TextoCursiva>

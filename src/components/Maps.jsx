@@ -38,24 +38,32 @@ const Maps = () => {
   const UbicacionContainer = styled.div`
     padding: 2rem;
   `;
+
+  const CustomMapContainer = styled.div`
+    padding: 5rem 4rem;
+
+    @media (min-width: 1024px) {
+      padding: 0;
+    }
+  `;
   return (
     <div id="ubicacion">
       <Seccion>
-        <MapContainer
-          center={[-34.6037389, -58.3815704]}
-          zoom={60}
-          scrollWheelZoom={false}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[-34.6037389, -58.3815704]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
+        <CustomMapContainer>
+          <MapContainer
+            center={[-34.6037389, -58.3815704]}
+            zoom={60}
+            scrollWheelZoom={false}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[-34.6037389, -58.3815704]}>
+              <Popup>Estamos ubicados en el obelisco.</Popup>
+            </Marker>
+          </MapContainer>
+        </CustomMapContainer>
 
         <UbicacionContainer className="bg-light text-center">
           <Titulo>Ubicación</Titulo>

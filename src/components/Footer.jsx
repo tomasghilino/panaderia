@@ -73,7 +73,7 @@ const Footer = () => {
     <Footer>
       <FooterContainer className="container">
         <div>
-          <img src="/media/logoPanaderia.png" alt="logo panaderia" />
+          <img src="/media/logoPanaderia.webp" alt="logo panaderia" />
 
           <p>
             El secreto para lograr la calidad, la frescura y el sabor

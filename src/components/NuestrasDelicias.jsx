@@ -58,22 +58,46 @@ const NuestrasDelicias = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <ImgSlider src="/media/productos1.jpg" alt="productos 1" />
+            <ImgSlider
+              loading="lazy"
+              src="/media/productos1.webp"
+              alt="productos 1"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <ImgSlider src="/media/productos2.jpg" alt="productos 2" />
+            <ImgSlider
+              loading="lazy"
+              src="/media/productos2.webp"
+              alt="productos 2"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <ImgSlider src="/media/productos3.jpg" alt="productos 3" />
+            <ImgSlider
+              loading="lazy"
+              src="/media/productos3.webp"
+              alt="productos 3"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <ImgSlider src="/media/productos4.jpg" alt="productos 4" />
+            <ImgSlider
+              loading="lazy"
+              src="/media/productos4.webp"
+              alt="productos 4"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <ImgSlider src="/media/productos5.jpeg" alt="productos 5" />
+            <ImgSlider
+              loading="lazy"
+              src="/media/productos5.webp"
+              alt="productos 5"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <ImgSlider src="/media/productos6.jpeg" alt="productos 6" />
+            <ImgSlider
+              loading="lazy"
+              src="/media/productos6.webp"
+              alt="productos 6"
+            />
           </SwiperSlide>
         </Swiper>
       </NuestrasDeliciasContainer>

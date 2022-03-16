@@ -88,8 +88,9 @@ const Productos = () => {
       <ProductosContenido>
         <div>
           <img
+            loading="lazy"
             className="h-100 w-100"
-            src="/media/productos1.jpg"
+            src="/media/productos1.webp"
             alt="productos"
           />
         </div>
@@ -99,8 +100,9 @@ const Productos = () => {
         </ProductosTexto>
         <div>
           <img
+            loading="lazy"
             className="h-100 w-100"
-            src="/media/productos2.jpg"
+            src="/media/productos2.webp"
             alt="productos"
           />
         </div>
@@ -110,8 +112,9 @@ const Productos = () => {
         </ProductosTexto>
         <div>
           <img
+            loading="lazy"
             className="h-100 w-100"
-            src="/media/productos3.jpg"
+            src="/media/productos3.webp"
             alt="productos"
           />
         </div>
@@ -121,8 +124,9 @@ const Productos = () => {
         </ProductosTexto>
         <div>
           <img
+            loading="lazy"
             className="h-100 w-100"
-            src="/media/productos4.jpg"
+            src="/media/productos4.webp"
             alt="productos"
           />
         </div>

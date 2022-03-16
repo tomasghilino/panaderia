@@ -30,7 +30,7 @@ const Nosotros = () => {
   `;
 
   const Immg = styled.div`
-    background: url('/media/nosotrosImagen.jpeg') center center no-repeat;
+    background: url('/media/nosotrosImagen.webp') center center no-repeat;
     background-size: cover;
 
     @media (max-width: 768px) {
@@ -57,7 +57,7 @@ const Nosotros = () => {
           Productos artesanales con la mejor materia prima.
         </TextoCursiva>
       </TextoNosotros>
-      <Immg className="col-md-6"></Immg>
+      <Immg loading="lazy" className="col-md-6"></Immg>
     </ContenedorNosotros>
   );
 };

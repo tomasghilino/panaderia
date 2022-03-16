@@ -31,7 +31,7 @@ const VideoInstitucional = () => {
   return (
     <div className="bg-secondary bg-gradient text-center ">
       <Titulo>Video Institucional</Titulo>
-      <Video src="https://www.youtube.com/embed/EGbNI26PPYg" />
+      <Video preload="none" src="https://www.youtube.com/embed/EGbNI26PPYg" />
     </div>
   );
 };

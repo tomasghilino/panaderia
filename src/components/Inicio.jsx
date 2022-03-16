@@ -40,10 +40,14 @@ const Inicio = () => {
     <Div id="inicio">
       <Navbar />
 
-      <Img src="media/logoPanaderia.png" alt="logo panaderia"></Img>
+      <Img
+        loading="lazy"
+        src="media/logoPanaderia.webp"
+        alt="logo panaderia"
+      ></Img>
 
       <Video muted loop autoPlay>
-        <source src="media/panaderiaVideo.mp4" type="video/mp4"></source>
+        <source src="media/panaderiaVideo.webm" type="video/webm"></source>
       </Video>
     </Div>
   );

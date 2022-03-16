@@ -9,7 +9,7 @@ const Contacto = () => {
   `;
 
   const ContactoImagen = styled.div`
-    background-image: url('/media/contactopanaderia.jpg');
+    background-image: url('/media/contactopanaderia.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

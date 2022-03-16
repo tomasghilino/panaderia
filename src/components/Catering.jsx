@@ -82,7 +82,7 @@ const Catering = () => {
 
   return (
     <>
-      <ImagenTitulo id="catering" background={`/media/menucatering.jpg`}>
+      <ImagenTitulo id="catering" background={`/media/menucatering.webp`}>
         <h1>Catering Artesanal</h1>
         <p>- Nuestro menu -</p>
       </ImagenTitulo>
@@ -99,7 +99,7 @@ const Catering = () => {
           reunión.
         </p>
       </TextoMenu>
-      <ImagenTitulo background={`/media/menulunch.jpg`}>
+      <ImagenTitulo background={`/media/menulunch.webp`}>
         <h1>Lunch</h1>
       </ImagenTitulo>
       <ContenidoMenu>
@@ -135,7 +135,7 @@ const Catering = () => {
           </div>
         </TextoMenuLista>
       </ContenidoMenu>
-      <ImagenTitulo background={`/media/menupasteleriadulce.jpg`}>
+      <ImagenTitulo background={`/media/menupasteleriadulce.webp`}>
         <h1>Pasteleria Dulce</h1>
       </ImagenTitulo>
       <ContenidoMenu>
@@ -167,7 +167,7 @@ const Catering = () => {
           </div>
         </TextoMenuLista>
       </ContenidoMenu>
-      <ImagenTitulo background={`/media/menusandwich.jpg`}>
+      <ImagenTitulo background={`/media/menusandwich.webp`}>
         <h1>Sandwich</h1>
       </ImagenTitulo>
       <ContenidoMenu>

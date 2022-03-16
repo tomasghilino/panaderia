@@ -119,7 +119,7 @@ const Navbar = () => {
     <Nav scrolled={scrolled}>
       <Logo>
         <Link to="inicio">
-          <img className="w-100 h-100" src="media/logo.png" alt="" />
+          <img className="w-100 h-100" src="media/logo.webp" alt="" />
         </Link>
       </Logo>
       <div className="d-flex">
